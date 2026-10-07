@@ -8,7 +8,7 @@ the cardinality of the relationships between them — without any code changes.
 ## Features
 
 **Access control**
-- Administrator login; passwords stored as PBKDF2 hashes, never plain text
+- Administrator login; passwords stored as salted scrypt hashes, never plain text
 - Every route except sign-in/out requires authentication
 - All queries scoped to the signed-in admin's institution, read from the
   session rather than the URL, so data cannot be reached by editing an id
